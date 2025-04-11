@@ -17,7 +17,7 @@ int get_min_first_index(int* array, int size) {
 
 	for (int i = 1; i < size; i++) 
 	{
-		if (absolut( * (array + i)) < *(array + index)) {
+		if (absolut( * (array + i)) < absolut(*(array + index))) {
 			index = i;
 		}
 	}
@@ -28,7 +28,7 @@ int get_max_last_index(int* array, int size) {
 	int index = size - 1;
 	for (int i = size - 2; i >= 0 ; i--)
 	{
-		if (absolut(* (array + i)) >* (array + index)) {
+		if (absolut(* (array + i)) > absolut( * (array + index))) {
 			index = 1;
 		}
 	}
