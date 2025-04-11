@@ -1,0 +1,1 @@
+int sum_elevents_between_extrems(int* array, int size);
